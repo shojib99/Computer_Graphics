@@ -1,60 +1,57 @@
 import turtle
 t = turtle.Turtle()
-t.speed(0)
-
-#Pole
+turtle.setup(800,600)
+t.speed(10)
 t.penup()
-t.goto(-220, -250)
-t.setheading(90)
-t.pendown()
-t.width(15)
-t.color("gold")
-t.forward(500)
-
-#Stand
-t.penup()
-t.goto(-230, -250)
-t.setheading(0)
-t.pendown()
-
-t.color("brown")
+t.goto(-200,0)
+t.fillcolor('green')
 t.begin_fill()
-
-t.forward(20)
-t.right(90)
-t.forward(60)
-t.right(90)
-t.forward(20)
-t.right(90)
-t.forward(60)
-
-t.end_fill()
-
-# 🇧🇩 Flag
-t.penup()
-t.goto(-200, 0)
-t.setheading(0)
 t.pendown()
-
-width = 400
-height = 240
-
-t.color("green")
-t.begin_fill()
 for i in range(2):
-    t.forward(width)
+    t.forward(400)
     t.left(90)
-    t.forward(height)
+    t.forward(200)
     t.left(90)
 t.end_fill()
 
-#Red color
 t.penup()
-t.goto(-50, 60)
-t.pendown()
-t.color("red")
+t.goto(0,40)
+t.fillcolor("red")
 t.begin_fill()
-t.circle(80)
+t.pendown()
+t.circle(60)
 t.end_fill()
 
-turtle.done()
+t.penup()
+t.goto(-200,0)
+t.fillcolor("gray")
+t.begin_fill()
+t.pendown()
+t.right(90)
+for i in range(2):
+    t.forward(200)
+    t.right(90)
+    t.forward(20)
+    t.right(90)
+    t.forward(200)
+t.end_fill()
+
+t.penup()
+t.goto(-200,-200)
+t.fillcolor("pink")
+t.begin_fill()
+t.pendown()
+t.left(90)
+t.forward(50)
+t.right(90)
+t.forward(40)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(40)
+t.right(90)
+t.forward(50)
+t.end_fill()
+
+
+turtle.mainloop()
